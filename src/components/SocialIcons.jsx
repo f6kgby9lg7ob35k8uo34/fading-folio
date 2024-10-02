@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaSquareGithub, FaSquareXTwitter, FaRedditSquare, FaMastodon } from 'react-icons/fa6';
+import { FaSquareGithub, FaSquareXTwitter, FaSquareReddit, FaMastodon } from 'react-icons/fa6';
 import { SiMatrix } from 'react-icons/si';
 import { MdEmail, MdKey } from 'react-icons/md';
 
@@ -39,7 +39,7 @@ export const SocialIcons = () => (
     <div className="flex justify-center mb-4">
       <SocialIcon href="https://github.com/yourusername" icon={FaSquareGithub} label="GitHub" />
       <SocialIcon href="https://twitter.com/yourusername" icon={FaSquareXTwitter} label="Twitter" />
-      <SocialIcon href="https://reddit.com/user/yourusername" icon={FaRedditSquare} label="Reddit" />
+      <SocialIcon href="https://reddit.com/user/yourusername" icon={FaSquareReddit} label="Reddit" />
       <SocialIcon href="https://mastodon.social/@yourusername" icon={FaMastodon} label="Mastodon" />
       <SocialIcon href="https://matrix.to/#/@yourusername:matrix.org" icon={SiMatrix} label="Matrix" />
     </div>
