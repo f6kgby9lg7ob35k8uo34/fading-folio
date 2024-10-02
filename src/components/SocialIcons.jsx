@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Twitter, MessageSquare } from 'lucide-react';
+import { FaSquareGithub, FaSquareXTwitter, FaRedditSquare, FaMastodon } from 'react-icons/fa6';
+import { SiMatrix } from 'react-icons/si';
+import { MdEmail, MdKey } from 'react-icons/md';
 
 const iconVariants = {
   hidden: { scale: 0 },
@@ -33,11 +35,21 @@ const SocialIcon = ({ href, icon: Icon, label }) => (
 );
 
 export const SocialIcons = () => (
-  <div className="flex justify-center">
-    <SocialIcon href="https://github.com/yourusername" icon={Github} label="GitHub" />
-    <SocialIcon href="https://twitter.com/yourusername" icon={Twitter} label="Twitter" />
-    <SocialIcon href="https://reddit.com/user/yourusername" icon={MessageSquare} label="Reddit" />
-    <SocialIcon href="https://mastodon.social/@yourusername" icon={MessageSquare} label="Mastodon" />
-    <SocialIcon href="https://matrix.to/#/@yourusername:matrix.org" icon={MessageSquare} label="Matrix" />
+  <div className="flex flex-col items-center">
+    <div className="flex justify-center mb-4">
+      <SocialIcon href="https://github.com/yourusername" icon={FaSquareGithub} label="GitHub" />
+      <SocialIcon href="https://twitter.com/yourusername" icon={FaSquareXTwitter} label="Twitter" />
+      <SocialIcon href="https://reddit.com/user/yourusername" icon={FaRedditSquare} label="Reddit" />
+      <SocialIcon href="https://mastodon.social/@yourusername" icon={FaMastodon} label="Mastodon" />
+      <SocialIcon href="https://matrix.to/#/@yourusername:matrix.org" icon={SiMatrix} label="Matrix" />
+    </div>
+    <div className="flex items-center text-white">
+      <MdEmail className="mr-2" />
+      <span>email@example.com</span>
+    </div>
+    <div className="flex items-center text-white mt-2">
+      <MdKey className="mr-2" />
+      <span>PGP: 0123 4567 89AB CDEF</span>
+    </div>
   </div>
 );
