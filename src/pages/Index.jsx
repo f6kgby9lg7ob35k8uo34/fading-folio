@@ -4,7 +4,7 @@ import { SocialIcons } from '../components/SocialIcons';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 relative overflow-hidden px-4 sm:px-0">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 relative overflow-hidden px-4 sm:px-6 lg:px-8">
       {/* Subtle noise overlay */}
       <div 
         className="absolute inset-0 opacity-5 mix-blend-overlay"
@@ -15,10 +15,10 @@ const Index = () => {
         }}
       />
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center relative z-10 w-full max-w-sm sm:max-w-md"
+        className="text-left relative z-10 mt-8 sm:mt-16"
       >
         <motion.h1
           className="text-3xl sm:text-4xl font-bold mb-2 text-white"
@@ -28,19 +28,26 @@ const Index = () => {
         >
           Your Name
         </motion.h1>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+        className="flex-grow flex flex-col justify-center items-center relative z-10"
+      >
         <motion.p
           className="text-lg sm:text-xl text-blue-200 mb-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.6 }}
         >
           Web Developer & Designer
         </motion.p>
         <motion.div
-          className="mb-6"
+          className="mb-6 text-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.8 }}
         >
           <p className="text-sm sm:text-base text-blue-100">
             Passionate about creating beautiful and functional web experiences.
@@ -49,14 +56,6 @@ const Index = () => {
             Always learning and exploring new technologies.
           </p>
         </motion.div>
-        <motion.img
-          src="/placeholder.svg" // Replace with your actual photo
-          alt="Profile"
-          className="w-24 h-24 sm:w-32 sm:h-32 rounded-full mx-auto mb-6 object-cover border-4 border-blue-300"
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ delay: 0.8, type: 'spring', stiffness: 260, damping: 20 }}
-        />
         <SocialIcons />
       </motion.div>
     </div>
