@@ -18,7 +18,7 @@ const Index = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 sm:p-8 shadow-lg relative z-10 w-full max-w-sm sm:max-w-md"
+        className="text-center relative z-10 w-full max-w-sm sm:max-w-md"
       >
         <motion.h1
           className="text-3xl sm:text-4xl font-bold mb-2 text-white"
