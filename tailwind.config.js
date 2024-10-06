@@ -51,6 +51,13 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        amoled: {
+          background: "#000000",
+          text: "#FFFFFF",
+          primary: "#00E5FF",
+          secondary: "#FF00E5",
+          accent: "#FFE500",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
