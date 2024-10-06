@@ -22,7 +22,7 @@ const SocialIcon = ({ href, icon: Icon, label }) => (
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className="mx-2 text-amoled-primary hover:text-amoled-secondary transition-colors"
+    className="mx-2 text-white hover:text-gray-300 transition-colors"
     variants={iconVariants}
     custom={label === 'GitHub' ? 0 : label === 'Twitter' ? 1 : 2}
     initial="hidden"
@@ -43,12 +43,12 @@ export const SocialIcons = () => (
       <SocialIcon href="https://mastodon.social/@yourusername" icon={FaMastodon} label="Mastodon" />
       <SocialIcon href="https://matrix.to/#/@yourusername:matrix.org" icon={SiMatrix} label="Matrix" />
     </div>
-    <div className="flex items-center text-amoled-text">
-      <MdEmail className="mr-2 text-amoled-primary" />
+    <div className="flex items-center text-white">
+      <MdEmail className="mr-2" />
       <span>email@example.com</span>
     </div>
-    <div className="flex items-center text-amoled-text mt-2">
-      <MdKey className="mr-2 text-amoled-primary" />
+    <div className="flex items-center text-white mt-2">
+      <MdKey className="mr-2" />
       <span>PGP: 0123 4567 89AB CDEF</span>
     </div>
   </div>
