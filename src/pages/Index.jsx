@@ -4,7 +4,7 @@ import { SocialIcons } from '../components/SocialIcons';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 relative overflow-hidden">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 relative overflow-hidden">
       {/* Subtle noise overlay */}
       <div 
         className="absolute inset-0 opacity-5 mix-blend-overlay"
@@ -24,7 +24,7 @@ const Index = () => {
           <motion.img
             src="/placeholder.svg" // Replace with your actual photo
             alt="Profile"
-            className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-400"
+            className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-300"
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.2, type: 'spring', stiffness: 260, damping: 20 }}
@@ -51,10 +51,10 @@ const Index = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            <p className="text-gray-300">
+            <p className="text-blue-100">
               Passionate about creating beautiful and functional web experiences.
             </p>
-            <p className="text-gray-300 mt-2">
+            <p className="text-blue-100 mt-2">
               Always learning and exploring new technologies.
             </p>
           </motion.div>
